@@ -1,1 +1,1 @@
-[{"id": 17, "name": "ar\u0131n\u00e7", "surname": "aslan", "email": "arincaslan@gmail.com", "password": "123456"}]
+[{"id": 17, "name": "ar\u0131n\u00e7", "surname": "aslan", "email": "arincaslan@gmail.com", "password": "1234dsda56", "emailActivated": true, "emailActivateKey": "6d3a3ace821424f6b59c92cf2240fe5fe126228f06cba5cbdab9329d0354dea3"}]
