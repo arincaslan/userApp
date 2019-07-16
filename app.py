@@ -1,29 +1,11 @@
-import json
+from UserFile.User import User
+from UserFile.Check import CheckUser
+from UserFile.Change import Change
 
-class registerUser():
+#user1 = User(12, 'berk', 'elmas', 'berkelmas96@gmail.com', '123456')
+#user2 = User(17, 'arınç', 'aslan', 'arincaslan@gmail.com', '1234dsda56')
 
-    def __init__(self, id, name, surname, email, password):
-        self.id = id
-        self.name = name
-        self.surname = surname
-        self.email = email
-        self.password = password
+#userCheck = User(12, 'berk', 'elmas', 'berkelmas96@gmail.com', '123456')
+user2 = User(17, 'arınç', 'aslan', 'arincaslan@gmail.com', '1234dsda56')
 
-        self.list = []
-
-    def addUser(self):
-        users = ''
-
-            #self.list.append({'id' : self.id, 'name' : self.name, 'surname' : self.surname, 'email' : self.email, 'password' : self.password})
-        with open('users.txt', 'r') as the_file:
-            users = json.loads(the_file.read())
-            users.append({'id' : self.id, 'name' : self.name, 'surname' : self.surname, 'email' : self.email, 'password' : self.password})
-
-        with open('users.txt', 'w') as file:
-            file.write(json.dumps(users))
-                #the_file.write("{'id' : %s, 'name' : %s, 'surname' : %s, 'email' : %s, 'password' : %s}" % (self.id, self.name, self.surname, self.email, self.password))
-
-user1 = registerUser(12, 'berk', 'elmas', 'berkelmas96@gmail.com', '123456')
-user2 = registerUser(17, 'arınç', 'aslan', 'arincaslan@gmail.com', '1234dsda56')
-
-print(user2.addUser())
+print(Change.changePassword(user2.get_email, user2.get_password, '123456'))
