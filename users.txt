@@ -1,0 +1,1 @@
+[{"id": 12, "name": "berk", "surname": "elmas", "email": "berkelmas96@gmail.com", "password": "123456"}, {"id": 17, "name": "ar\u0131n\u00e7", "surname": "aslan", "email": "arincaslan@gmail.com", "password": "1234dsda56"}, {"id": 17, "name": "ar\u0131n\u00e7", "surname": "aslan", "email": "arincaslan@gmail.com", "password": "1234dsda56"}]
